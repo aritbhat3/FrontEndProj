@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="labteststyle.css">
+</head>
+
+<body>
+
+  <div class="labform">
+    <form class="image">
+      <div class="details">
+        <p>1. Your Contact Details</p>
+        <input type="text" name="Full Name" placeholder="Full Name">
+        <input type="number" name="Patient Id if exists" placeholder="Patient Id if exists">
+        <br>
+        <input type="number" name="Contact Number" placeholder="Contact Number">
+        <input type="email" name="Email Id" placeholder="Email Id">
+        <br>
+        <p>1. Address</p>
+        <input type="number" name="House Number" placeholder="House Number">
+        <input type="text" name="Street" placeholder="Street">
+        <br>
+        <div class="details">
+          <input type="text" name="Area" placeholder="Area">
+        </div>
+        <br><br>
+        <div class="details">
+          <p style="font-size: 12px;font-weight: 300;">District: </p>
+          <input list="District" name="District" placeholder="Choose">
+          <datalist id="District">
+            <option value="Choose">
+            <option value="Hyderabad">
+            <option value="RangaReddy">
+          </datalist>
+        </div><br><br><br><br>
+        <div class="details">
+          <p style="margin-bottom: 0%;">3. Test Type</p>
+          <p style="font-size: 12px;color: brown;padding: 0%;top: 0;">(Check atleast one box without fail)</p>
+          <div class="checkbox">
+            <input type="checkbox" name="CBC" placeholder="CBC"><label>i. CBC</label>
+            <input type="checkbox" name="Complete Urine" placeholder="Complete Urine"><label>ii. Complete Urine</label>
+            <input type="checkbox" name="Lipid Profile" placeholder="Lipid Profile"><label>iii. Lipid Profile</label>
+            <input type="checkbox" name="Thyroid Stimulating Hormone(TSH)"
+              placeholder="Thyroid Stimulating Hormone(TSH)"><label>iv. Thyroid Stimulating Hormone(TSH)</label>
+            <input type="checkbox" name="Glucose Test" placeholder="Glucose Test"><label>v. Glucose Test</label>
+          </div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+        <div class="details">
+          <p>4. Do you want hard copy of the report also?</p>
+          <div class="checkbox">
+            <input type="checkbox" name="yes" placeholder="yes"><label>Yes</label>
+            <input type="checkbox" name="No" placeholder="No"><label>No</label>
+          </div>
+        </div><br><br><br><br><br>
+        <div class="details">
+          <p> 5. Select your comfortable Date and Time</p>
+          <label for="Date">Date:</label>
+          <input type="date" name="Date" placeholder="Date"><br>
+          <label for="Time">Time:</label>
+          <input type="time" name="Time" placeholder="Time">
+        </div>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <div class="buttons">
+    <button>Reset</button>
+    <button>Submit</button>
+    <form action="WebPharmacy.html">
+      <button>Home</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
